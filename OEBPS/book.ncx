@@ -6,297 +6,300 @@
 		<meta name="dtb:totalPageCount" content="0" />
 		<meta name="dtb:maxPageNumber" content="0" />
 	</head>
-
 	<docTitle>
 		<text>Harry Potter and the Nightmares of Futures Past</text>
 	</docTitle>
-
 	<docAuthor>
 		<text>Matthew Schocke</text>
 	</docAuthor>
-
 	<navMap>
 		<navPoint id="cover" playOrder="1">
 			<navLabel>
 				<text>Harry Potter and the Nightmares of Futures Past</text>
 			</navLabel>
-			<content src="Cover.html" />
+			<content src="Cover.xhtml" />
 		</navPoint>
 		<navPoint id="ref_toc" playOrder="2">
 			<navLabel>
 				<text>Table of Contents</text>
 			</navLabel>
-			<content src="TOC.html" />
+			<content src="TOC.xhtml" />
 		</navPoint>
 		<navPoint id="year1" playOrder="3">
 			<navLabel>
 				<text>Year 1</text>
 			</navLabel>
-			<content src="Year1.html" />
+			<content src="Year1.xhtml" />
 		</navPoint>
 		<navPoint id="chapter1" playOrder="4">
 			<navLabel>
 				<text>1. Prologue: The End of Days</text>
 			</navLabel>
-			<content src="Chapter1.html" />
+			<content src="Chapter1.xhtml" />
 		</navPoint>
 		<navPoint id="chapter2" playOrder="5">
 			<navLabel>
 				<text>2. Back to Privet Drive</text>
 			</navLabel>
-			<content src="Chapter2.html" />
+			<content src="Chapter2.xhtml" />
 		</navPoint>
 		<navPoint id="chapter3" playOrder="6">
 			<navLabel>
 				<text>3. Making Waves</text>
 			</navLabel>
-			<content src="Chapter3.html" />
+			<content src="Chapter3.xhtml" />
 		</navPoint>
 		<navPoint id="chapter4" playOrder="7">
 			<navLabel>
 				<text>4. The Letters of Autumn</text>
 			</navLabel>
-			<content src="Chapter4.html" />
+			<content src="Chapter4.xhtml" />
 		</navPoint>
 		<navPoint id="chapter5" playOrder="8">
 			<navLabel>
 				<text>5. A Changed Halloween</text>
 			</navLabel>
-			<content src="Chapter5.html" />
+			<content src="Chapter5.xhtml" />
 		</navPoint>
 		<navPoint id="chapter6" playOrder="9">
 			<navLabel>
 				<text>6. Christmas at Hogwarts</text>
 			</navLabel>
-			<content src="Chapter6.html" />
+			<content src="Chapter6.xhtml" />
 		</navPoint>
 		<navPoint id="chapter7" playOrder="10">
 			<navLabel>
 				<text>7. A Quarrel with Quirrell</text>
 			</navLabel>
-			<content src="Chapter7.html" />
+			<content src="Chapter7.xhtml" />
 		</navPoint>
 		<navPoint id="chapter8" playOrder="11">
 			<navLabel>
 				<text>8. The Leaving Feast</text>
 			</navLabel>
-			<content src="Chapter8.html" />
+			<content src="Chapter8.xhtml" />
 		</navPoint>
 		<navPoint id="chapter9" playOrder="12">
 			<navLabel>
 				<text>9. A Word with the Weasleys</text>
 			</navLabel>
-			<content src="Chapter9.html" />
+			<content src="Chapter9.xhtml" />
 		</navPoint>
 		<navPoint id="year2" playOrder="13">
 			<navLabel>
 				<text>Year 2</text>
 			</navLabel>
-			<content src="Year2.html" />
+			<content src="Year2.xhtml" />
 		</navPoint>
 		<navPoint id="chapter10" playOrder="14">
 			<navLabel>
 				<text>10. Worst Birthday Ever</text>
 			</navLabel>
-			<content src="Chapter10.html" />
+			<content src="Chapter10.xhtml" />
 		</navPoint>
 		<navPoint id="chapter11" playOrder="15">
 			<navLabel>
 				<text>11. A Daring Rescue</text>
 			</navLabel>
-			<content src="Chapter11.html" />
+			<content src="Chapter11.xhtml" />
 		</navPoint>
 		<navPoint id="chapter12" playOrder="16">
 			<navLabel>
 				<text>12. Doing the Mungo Shuffle</text>
 			</navLabel>
-			<content src="Chapter12.html" />
+			<content src="Chapter12.xhtml" />
 		</navPoint>
 		<navPoint id="chapter13" playOrder="17">
 			<navLabel>
 				<text>13. A Granger Interlude</text>
 			</navLabel>
-			<content src="Chapter13.html" />
+			<content src="Chapter13.xhtml" />
 		</navPoint>
 		<navPoint id="chapter14" playOrder="18">
 			<navLabel>
 				<text>14. A Dish Best Served Cold</text>
 			</navLabel>
-			<content src="Chapter14.html" />
+			<content src="Chapter14.xhtml" />
 		</navPoint>
 		<navPoint id="chapter15" playOrder="19">
 			<navLabel>
 				<text>15. Moonlight Discussions</text>
 			</navLabel>
-			<content src="Chapter15.html" />
+			<content src="Chapter15.xhtml" />
 		</navPoint>
 		<navPoint id="chapter16" playOrder="20">
 			<navLabel>
 				<text>16. A Visit to Sunny Azkaban</text>
 			</navLabel>
-			<content src="Chapter16.html" />
+			<content src="Chapter16.xhtml" />
 		</navPoint>
 		<navPoint id="chapter17" playOrder="21">
 			<navLabel>
 				<text>17. A Summer Seen Through Brown Eyes</text>
 			</navLabel>
-			<content src="Chapter17.html" />
+			<content src="Chapter17.xhtml" />
 		</navPoint>
 		<navPoint id="chapter18" playOrder="22">
 			<navLabel>
 				<text>18. A Visit from the Eldest</text>
 			</navLabel>
-			<content src="Chapter18.html" />
+			<content src="Chapter18.xhtml" />
 		</navPoint>
 		<navPoint id="chapter19" playOrder="23">
 			<navLabel>
 				<text>19. An Interesting Start of Term</text>
 			</navLabel>
-			<content src="Chapter19.html" />
+			<content src="Chapter19.xhtml" />
 		</navPoint>
 		<navPoint id="chapter20" playOrder="24">
 			<navLabel>
 				<text>20. Dumbledore's Office</text>
 			</navLabel>
-			<content src="Chapter20.html" />
+			<content src="Chapter20.xhtml" />
 		</navPoint>
 		<navPoint id="chapter21" playOrder="25">
 			<navLabel>
 				<text>21. Sirius &amp; a Quidditch Spectacle</text>
 			</navLabel>
-			<content src="Chapter21.html" />
+			<content src="Chapter21.xhtml" />
 		</navPoint>
 		<navPoint id="chapter22" playOrder="26">
 			<navLabel>
 				<text>22. The Dueling Club</text>
 			</navLabel>
-			<content src="Chapter22.html" />
+			<content src="Chapter22.xhtml" />
 		</navPoint>
 		<navPoint id="chapter23" playOrder="27">
 			<navLabel>
 				<text>23. The Christmas Express</text>
 			</navLabel>
-			<content src="Chapter23.html" />
+			<content src="Chapter23.xhtml" />
 		</navPoint>
 		<navPoint id="chapter24" playOrder="28">
 			<navLabel>
 				<text>24. Christmas at The Burrow</text>
 			</navLabel>
-			<content src="Chapter24.html" />
+			<content src="Chapter24.xhtml" />
 		</navPoint>
 		<navPoint id="chapter25" playOrder="29">
 			<navLabel>
 				<text>25. Mistletoe &amp; Misshapen Messengers</text>
 			</navLabel>
-			<content src="Chapter25.html" />
+			<content src="Chapter25.xhtml" />
 		</navPoint>
 		<navPoint id="chapter26" playOrder="30">
 			<navLabel>
 				<text>26. Miserable Uncertainties</text>
 			</navLabel>
-			<content src="Chapter26.html" />
+			<content src="Chapter26.xhtml" />
 		</navPoint>
 		<navPoint id="chapter27" playOrder="31">
 			<navLabel>
 				<text>27. All Hell Breaks Loose</text>
 			</navLabel>
-			<content src="Chapter27.html" />
+			<content src="Chapter27.xhtml" />
 		</navPoint>
 		<navPoint id="chapter28" playOrder="32">
 			<navLabel>
 				<text>28. Conversations &amp; Confrontations</text>
 			</navLabel>
-			<content src="Chapter28.html" />
+			<content src="Chapter28.xhtml" />
 		</navPoint>
 		<navPoint id="year3" playOrder="33">
 			<navLabel>
 				<text>Year 3</text>
 			</navLabel>
-			<content src="Year3.html" />
+			<content src="Year3.xhtml" />
 		</navPoint>
 		<navPoint id="chapter29" playOrder="34">
 			<navLabel>
 				<text>29. A Relatively Pleasant Start</text>
 			</navLabel>
-			<content src="Chapter29.html" />
+			<content src="Chapter29.xhtml" />
 		</navPoint>
 		<navPoint id="chapter30" playOrder="35">
 			<navLabel>
 				<text>30. A Busy Summer</text>
 			</navLabel>
-			<content src="Chapter30.html" />
+			<content src="Chapter30.xhtml" />
 		</navPoint>
 		<navPoint id="chapter31" playOrder="36">
 			<navLabel>
 				<text>31. Harsh Words</text>
 			</navLabel>
-			<content src="Chapter31.html" />
+			<content src="Chapter31.xhtml" />
 		</navPoint>
 		<navPoint id="chapter32" playOrder="37">
 			<navLabel>
 				<text>32. Fear and Loathing</text>
 			</navLabel>
-			<content src="Chapter32.html" />
+			<content src="Chapter32.xhtml" />
 		</navPoint>
 		<navPoint id="chapter33" playOrder="38">
 			<navLabel>
 				<text>33. Destructive Impulses</text>
 			</navLabel>
-			<content src="Chapter33.html" />
+			<content src="Chapter33.xhtml" />
 		</navPoint>
 		<navPoint id="chapter34" playOrder="39">
 			<navLabel>
 				<text>34. Life, Death, and Quidditch</text>
 			</navLabel>
-			<content src="Chapter34.html" />
+			<content src="Chapter34.xhtml" />
 		</navPoint>
 		<navPoint id="chapter35" playOrder="40">
 			<navLabel>
 				<text>35. A War of Words</text>
 			</navLabel>
-			<content src="Chapter35.html" />
+			<content src="Chapter35.xhtml" />
 		</navPoint>
 		<navPoint id="chapter36" playOrder="41">
 			<navLabel>
 				<text>36.The Slughorn that Stole Christmas</text>
 			</navLabel>
-			<content src="Chapter36.html" />
+			<content src="Chapter36.xhtml" />
 		</navPoint>
 		<navPoint id="chapter37" playOrder="42">
 			<navLabel>
 				<text>37. Return to the Chamber</text>
 			</navLabel>
-			<content src="Chapter37.html" />
+			<content src="Chapter37.xhtml" />
 		</navPoint>
 		<navPoint id="chapter38" playOrder="43">
 			<navLabel>
 				<text>38. The Quiet Before the Storm</text>
 			</navLabel>
-			<content src="Chapter38.html" />
+			<content src="Chapter38.xhtml" />
 		</navPoint>
 		<navPoint id="year4" playOrder="44">
 			<navLabel>
 				<text>39. The Battle of Hogwarts</text>
 			</navLabel>
-			<content src="Chapter39.html" />
+			<content src="Chapter39.xhtml" />
 		</navPoint>
 		<navPoint id="chapter39" playOrder="45">
 			<navLabel>
 				<text>Year 4</text>
 			</navLabel>
-			<content src="Year4.html" />
+			<content src="Year4.xhtml" />
 		</navPoint>
 		<navPoint id="chapter40" playOrder="46">
 			<navLabel>
 				<text>40. The Quidditch World Cup</text>
 			</navLabel>
-			<content src="Chapter40.html" />
+			<content src="Chapter40.xhtml" />
 		</navPoint>
 		<navPoint id="chapter41" playOrder="47">
 			<navLabel>
 				<text>41. The Not So Welcoming Feast</text>
 			</navLabel>
-			<content src="Chapter41.html" />
+			<content src="Chapter41.xhtml" />
+		</navPoint>
+		<navPoint id="chapter42" playOrder="48">
+			<navLabel>
+				<text>42. Goblet Problems</text>
+			</navLabel>
+			<content src="Chapter42.xhtml" />
 		</navPoint>
 	</navMap>
 </ncx>

@@ -1,126 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="3.0">
-	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
-		xmlns:opf="http://www.idpf.org/2007/opf"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-		<dc:title>Harry Potter and the Nightmares of Futures Past</dc:title>
-		<dc:language>en</dc:language>
-		<dc:identifier id="BookId">https://www.fanfiction.net/s/2636963/</dc:identifier>
-		<dc:date>2005-08-28T00:00:00Z</dc:date>
-		<dc:description>The war is over. Too bad no one is left to celebrate. Harry makes a desperate plan to go back in time, even though it means returning Voldemort to life. Now an 11 year old Harry with 30 year old memories is starting Hogwarts. Can he get it right?</dc:description>
-		<dc:publisher>FanFiction.net</dc:publisher>
-		<dc:relation>http://fanfiction.net/</dc:relation>
-		<dc:creator>Matthew Schocke</dc:creator>
-		<dc:source>https://www.fanfiction.net/s/2636963/</dc:source>
-        <meta property="dcterms:modified">2015-05-30T00:00:00Z</meta>
-	</metadata>
-
-	<manifest>
-			<item id="ncx" href="book.ncx" media-type="application/x-dtbncx+xml" />
-			<item id="majordivider" href="majordivider.gif" media-type="image/gif" />
-			<item id="minordivider" href="minordivider.gif" media-type="image/gif" />
-			<item id="cover" href="Cover.html" media-type="application/xhtml+xml" />
-			<item id="ref_toc" properties="nav" href="TOC.html" media-type="application/xhtml+xml" />
-			<item id="year1" href="Year1.html" media-type="application/xhtml+xml" />
-			<item id="chapter1" href="Chapter1.html" media-type="application/xhtml+xml" />
-			<item id="chapter2" href="Chapter2.html" media-type="application/xhtml+xml" />
-			<item id="chapter3" href="Chapter3.html" media-type="application/xhtml+xml" />
-			<item id="chapter4" href="Chapter4.html" media-type="application/xhtml+xml" />
-			<item id="chapter5" href="Chapter5.html" media-type="application/xhtml+xml" />
-			<item id="chapter6" href="Chapter6.html" media-type="application/xhtml+xml" />
-			<item id="chapter7" href="Chapter7.html" media-type="application/xhtml+xml" />
-			<item id="chapter8" href="Chapter8.html" media-type="application/xhtml+xml" />
-			<item id="chapter9" href="Chapter9.html" media-type="application/xhtml+xml" />
-			<item id="year2" href="Year2.html" media-type="application/xhtml+xml" />
-			<item id="chapter10" href="Chapter10.html" media-type="application/xhtml+xml" />
-			<item id="chapter11" href="Chapter11.html" media-type="application/xhtml+xml" />
-			<item id="chapter12" href="Chapter12.html" media-type="application/xhtml+xml" />
-			<item id="chapter13" href="Chapter13.html" media-type="application/xhtml+xml" />
-			<item id="chapter14" href="Chapter14.html" media-type="application/xhtml+xml" />
-			<item id="chapter15" href="Chapter15.html" media-type="application/xhtml+xml" />
-			<item id="chapter16" href="Chapter16.html" media-type="application/xhtml+xml" />
-			<item id="chapter17" href="Chapter17.html" media-type="application/xhtml+xml" />
-			<item id="chapter18" href="Chapter18.html" media-type="application/xhtml+xml" />
-			<item id="chapter19" href="Chapter19.html" media-type="application/xhtml+xml" />
-			<item id="chapter20" href="Chapter20.html" media-type="application/xhtml+xml" />
-			<item id="chapter21" href="Chapter21.html" media-type="application/xhtml+xml" />
-			<item id="chapter22" href="Chapter22.html" media-type="application/xhtml+xml" />
-			<item id="chapter23" href="Chapter23.html" media-type="application/xhtml+xml" />
-			<item id="chapter24" href="Chapter24.html" media-type="application/xhtml+xml" />
-			<item id="chapter25" href="Chapter25.html" media-type="application/xhtml+xml" />
-			<item id="chapter26" href="Chapter26.html" media-type="application/xhtml+xml" />
-			<item id="chapter27" href="Chapter27.html" media-type="application/xhtml+xml" />
-			<item id="chapter28" href="Chapter28.html" media-type="application/xhtml+xml" />
-			<item id="year3" href="Year3.html" media-type="application/xhtml+xml" />
-			<item id="chapter29" href="Chapter29.html" media-type="application/xhtml+xml" />
-			<item id="chapter30" href="Chapter30.html" media-type="application/xhtml+xml" />
-			<item id="chapter31" href="Chapter31.html" media-type="application/xhtml+xml" />
-			<item id="chapter32" href="Chapter32.html" media-type="application/xhtml+xml" />
-			<item id="chapter33" href="Chapter33.html" media-type="application/xhtml+xml" />
-			<item id="chapter34" href="Chapter34.html" media-type="application/xhtml+xml" />
-			<item id="chapter35" href="Chapter35.html" media-type="application/xhtml+xml" />
-			<item id="chapter36" href="Chapter36.html" media-type="application/xhtml+xml" />
-			<item id="chapter37" href="Chapter37.html" media-type="application/xhtml+xml" />
-			<item id="chapter38" href="Chapter38.html" media-type="application/xhtml+xml" />
-			<item id="year4" href="Year4.html" media-type="application/xhtml+xml" />
-			<item id="chapter39" href="Chapter39.html" media-type="application/xhtml+xml" />
-			<item id="chapter40" href="Chapter40.html" media-type="application/xhtml+xml" />
-			<item id="chapter41" href="Chapter41.html" media-type="application/xhtml+xml" />
-	</manifest>
-
-	<spine toc="ncx">
-		<itemref idref="cover" />
-		<itemref idref="ref_toc" linear="no" />
-		<itemref idref="year1" />
-		<itemref idref="chapter1" />
-		<itemref idref="chapter2" />
-		<itemref idref="chapter3" />
-		<itemref idref="chapter4" />
-		<itemref idref="chapter5" />
-		<itemref idref="chapter6" />
-		<itemref idref="chapter7" />
-		<itemref idref="chapter8" />
-		<itemref idref="chapter9" />
-		<itemref idref="year2" />
-		<itemref idref="chapter10" />
-		<itemref idref="chapter11" />
-		<itemref idref="chapter12" />
-		<itemref idref="chapter13" />
-		<itemref idref="chapter14" />
-		<itemref idref="chapter15" />
-		<itemref idref="chapter16" />
-		<itemref idref="chapter17" />
-		<itemref idref="chapter18" />
-		<itemref idref="chapter19" />
-		<itemref idref="chapter20" />
-		<itemref idref="chapter21" />
-		<itemref idref="chapter22" />
-		<itemref idref="chapter23" />
-		<itemref idref="chapter24" />
-		<itemref idref="chapter25" />
-		<itemref idref="chapter26" />
-		<itemref idref="chapter27" />
-		<itemref idref="chapter28" />
-		<itemref idref="year3" />
-		<itemref idref="chapter29" />
-		<itemref idref="chapter30" />
-		<itemref idref="chapter31" />
-		<itemref idref="chapter32" />
-		<itemref idref="chapter33" />
-		<itemref idref="chapter34" />
-		<itemref idref="chapter35" />
-		<itemref idref="chapter36" />
-		<itemref idref="chapter37" />
-		<itemref idref="chapter38" />
-		<itemref idref="year4" />
-		<itemref idref="chapter39" />
-		<itemref idref="chapter40" />
-		<itemref idref="chapter41" />
-	</spine>
-
-	<guide>
-		<reference type="cover" title="Harry Potter and the Nightmares of Futures Past" href="Cover.html" />
-		<reference type="toc" title="Table of Contents" href="TOC.html" />
-		<reference type="text" title="Year 1" href="Year1.html" />
-	</guide>
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dc:title>Harry Potter and the Nightmares of Futures Past</dc:title>
+        <dc:language>en</dc:language>
+        <dc:identifier id="BookId">https://www.fanfiction.net/s/2636963/</dc:identifier>
+        <dc:date>2005-08-28T00:00:00Z</dc:date>
+        <dc:description>The war is over. Too bad no one is left to celebrate. Harry makes a desperate plan to go back in time, even though it means returning Voldemort to life. Now an 11 year old Harry with 30 year old memories is starting Hogwarts. Can he get it right?</dc:description>
+        <dc:publisher>FanFiction.net</dc:publisher>
+        <dc:relation>http://fanfiction.net/</dc:relation>
+        <dc:creator>Matthew Schocke</dc:creator>
+        <dc:source>https://www.fanfiction.net/s/2636963/</dc:source>
+        <meta property="dcterms:modified">2015-09-11T00:00:00Z</meta>
+        <meta name="cover" content="cover"/>
+    </metadata>
+    <manifest>
+        <item id="ncx" href="book.ncx" media-type="application/x-dtbncx+xml" />
+        <item id="gryffindorsix" href="gryffindorsix.jpg" media-type="image/jpeg" />
+        <item id="majordivider" href="majordivider.gif" media-type="image/gif" />
+        <item id="minordivider" href="minordivider.gif" media-type="image/gif" />
+        <item id="style" href="style.css" media-type="text/css" />
+        <item id="cover" href="Cover.xhtml" media-type="application/xhtml+xml" />
+        <item id="ref_toc" properties="nav" href="TOC.xhtml" media-type="application/xhtml+xml" />
+        <item id="year1" href="Year1.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter1" href="Chapter1.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter2" href="Chapter2.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter3" href="Chapter3.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter4" href="Chapter4.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter5" href="Chapter5.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter6" href="Chapter6.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter7" href="Chapter7.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter8" href="Chapter8.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter9" href="Chapter9.xhtml" media-type="application/xhtml+xml" />
+        <item id="year2" href="Year2.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter10" href="Chapter10.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter11" href="Chapter11.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter12" href="Chapter12.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter13" href="Chapter13.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter14" href="Chapter14.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter15" href="Chapter15.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter16" href="Chapter16.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter17" href="Chapter17.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter18" href="Chapter18.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter19" href="Chapter19.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter20" href="Chapter20.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter21" href="Chapter21.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter22" href="Chapter22.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter23" href="Chapter23.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter24" href="Chapter24.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter25" href="Chapter25.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter26" href="Chapter26.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter27" href="Chapter27.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter28" href="Chapter28.xhtml" media-type="application/xhtml+xml" />
+        <item id="year3" href="Year3.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter29" href="Chapter29.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter30" href="Chapter30.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter31" href="Chapter31.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter32" href="Chapter32.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter33" href="Chapter33.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter34" href="Chapter34.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter35" href="Chapter35.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter36" href="Chapter36.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter37" href="Chapter37.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter38" href="Chapter38.xhtml" media-type="application/xhtml+xml" />
+        <item id="year4" href="Year4.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter39" href="Chapter39.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter40" href="Chapter40.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter41" href="Chapter41.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter42" href="Chapter42.xhtml" media-type="application/xhtml+xml" />
+    </manifest>
+    <spine toc="ncx">
+        <itemref idref="cover" />
+        <itemref idref="ref_toc" linear="no" />
+        <itemref idref="year1" />
+        <itemref idref="chapter1" />
+        <itemref idref="chapter2" />
+        <itemref idref="chapter3" />
+        <itemref idref="chapter4" />
+        <itemref idref="chapter5" />
+        <itemref idref="chapter6" />
+        <itemref idref="chapter7" />
+        <itemref idref="chapter8" />
+        <itemref idref="chapter9" />
+        <itemref idref="year2" />
+        <itemref idref="chapter10" />
+        <itemref idref="chapter11" />
+        <itemref idref="chapter12" />
+        <itemref idref="chapter13" />
+        <itemref idref="chapter14" />
+        <itemref idref="chapter15" />
+        <itemref idref="chapter16" />
+        <itemref idref="chapter17" />
+        <itemref idref="chapter18" />
+        <itemref idref="chapter19" />
+        <itemref idref="chapter20" />
+        <itemref idref="chapter21" />
+        <itemref idref="chapter22" />
+        <itemref idref="chapter23" />
+        <itemref idref="chapter24" />
+        <itemref idref="chapter25" />
+        <itemref idref="chapter26" />
+        <itemref idref="chapter27" />
+        <itemref idref="chapter28" />
+        <itemref idref="year3" />
+        <itemref idref="chapter29" />
+        <itemref idref="chapter30" />
+        <itemref idref="chapter31" />
+        <itemref idref="chapter32" />
+        <itemref idref="chapter33" />
+        <itemref idref="chapter34" />
+        <itemref idref="chapter35" />
+        <itemref idref="chapter36" />
+        <itemref idref="chapter37" />
+        <itemref idref="chapter38" />
+        <itemref idref="year4" />
+        <itemref idref="chapter39" />
+        <itemref idref="chapter40" />
+        <itemref idref="chapter41" />
+        <itemref idref="chapter42" />
+    </spine>
+    <guide>
+        <reference type="cover" title="Harry Potter and the Nightmares of Futures Past" href="Cover.xhtml" />
+        <reference type="toc" title="Table of Contents" href="TOC.xhtml" />
+        <reference type="text" title="Beginning" href="Cover.xhtml" />
+    </guide>
 </package>
