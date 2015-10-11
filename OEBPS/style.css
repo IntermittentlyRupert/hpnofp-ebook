@@ -12,31 +12,41 @@ img {
     margin-right: auto;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+    text-indent: 1.5em;
+}
+
 nav {
     text-align: left;
 }
 
-.coverPage {
+.coverpage {
     text-align: center;
     height: 100%;
     width: 100%;
     margin-top: 20%;
 }
 
-.firstHeader {
+.firstheader {
     text-align: left;
     padding-left: 2.1em;
 }
 
-.tocImg, .yearImg {
+.tocimg, .yearimg {
     width: 45%;
     max-width: 593px;
 }
 
-.yearTitle {
+.yeartitle {
     margin-top: 40%;
 }
 
 .storytext {
     margin-top: 7%;
+}
+
+.storyparagraph {
+    margin-bottom: 1em;
 }
