@@ -50,3 +50,8 @@ nav {
 .storyparagraph {
     margin-bottom: 1em;
 }
+
+.raisedcaps {
+    font-size: 2.5em;
+    font-weight: bold;
+}
