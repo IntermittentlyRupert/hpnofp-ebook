@@ -49,4 +49,29 @@ nav {
 .raisedcaps {
     font-size: 2.5em;
     font-weight: bold;
+    line-height: 0.4em;
+}
+
+.nightmare, .letter, .song, .article {
+    font-style: italic;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.letter p {
+    margin-bottom: 1em;
+    text-indent: 0;
+}
+
+.article p {
+    text-indent: 0;
+}
+
+.article p.title {
+    font-weight: bold;
+}
+
+.article p.byline {
+    font-size: smaller;
+    margin-bottom: 0.5em;
 }
