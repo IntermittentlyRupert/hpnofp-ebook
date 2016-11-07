@@ -60,8 +60,8 @@
         <item id="chapter36" href="Chapter36.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter37" href="Chapter37.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter38" href="Chapter38.xhtml" media-type="application/xhtml+xml" />
-        <item id="year4" href="Year4.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter39" href="Chapter39.xhtml" media-type="application/xhtml+xml" />
+        <item id="year4" href="Year4.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter40" href="Chapter40.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter41" href="Chapter41.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter42" href="Chapter42.xhtml" media-type="application/xhtml+xml" />
@@ -109,8 +109,8 @@
         <itemref idref="chapter36" />
         <itemref idref="chapter37" />
         <itemref idref="chapter38" />
-        <itemref idref="year4" />
         <itemref idref="chapter39" />
+        <itemref idref="year4" />
         <itemref idref="chapter40" />
         <itemref idref="chapter41" />
         <itemref idref="chapter42" />

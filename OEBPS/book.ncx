@@ -265,13 +265,13 @@
 			</navLabel>
 			<content src="Chapter38.xhtml" />
 		</navPoint>
-		<navPoint id="year4" playOrder="43">
+		<navPoint id="chapter39" playOrder="43">
 			<navLabel>
 				<text>39. The Battle of Hogwarts</text>
 			</navLabel>
 			<content src="Chapter39.xhtml" />
 		</navPoint>
-		<navPoint id="chapter39" playOrder="44">
+		<navPoint id="year4" playOrder="44">
 			<navLabel>
 				<text>Year 4</text>
 			</navLabel>

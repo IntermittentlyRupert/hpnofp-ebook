@@ -15,7 +15,7 @@ img {
 p {
     margin: 0;
     padding: 0;
-    text-indent: 1.5em;
+    text-indent: 1em;
 }
 
 nav {
@@ -46,8 +46,12 @@ nav {
     margin-bottom: 1em;
 }
 
+.storyparagraph > p:first-child {
+    text-indent: 0;
+}
+
 .raisedcaps {
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: bold;
     line-height: 0.4em;
 }
@@ -58,13 +62,12 @@ nav {
     margin-right: 15%;
 }
 
-.letter p {
-    margin-bottom: 1em;
+.letter p, .song p, .article p {
     text-indent: 0;
 }
 
-.article p {
-    text-indent: 0;
+.letter p {
+    margin-bottom: 1em;
 }
 
 .article p.title {
