@@ -14,6 +14,6 @@ done
 mv $WORKING_DIR $BACKUP_DIR
 mv $TMP_DIR $WORKING_DIR
 rm "$DIR/$ARTIFACT"
-(cd $DIR && zip -r "$ARTIFACT" META-INF OEBPS mimetype)
+(cd $DIR && zip -X0 "$ARTIFACT" mimetype && zip -r "$ARTIFACT" META-INF OEBPS)
 rm -r $WORKING_DIR
 mv $BACKUP_DIR $WORKING_DIR
