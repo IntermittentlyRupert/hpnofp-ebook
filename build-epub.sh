@@ -6,8 +6,8 @@ WORKING_DIR="$DIR/OEBPS"
 TMP_DIR="$DIR/OEBPS_tmp"
 BACKUP_DIR="$DIR/OEBPS_orig"
 
-mkdir $TMP_DIR
-for file in `ls $WORKING_DIR/*`; do
+cp -r $WORKING_DIR $TMP_DIR
+for file in `ls $WORKING_DIR/*ml $WORKING_DIR/*.ncx $WORKING_DIR/*.opf`; do
   # collapse whitespace for efficiency
   sed 's|\s\s\s*| |g' "$file" | tr -d '\n' > `echo $file | sed "s|$WORKING_DIR/|$TMP_DIR/|"`
 done
