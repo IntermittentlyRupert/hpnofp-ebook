@@ -65,6 +65,7 @@
         <item id="chapter40" href="Chapter40.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter41" href="Chapter41.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter42" href="Chapter42.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter43" href="Chapter43.xhtml" media-type="application/xhtml+xml" />
     </manifest>
     <spine toc="ncx">
         <itemref idref="ref_toc" />
@@ -114,6 +115,7 @@
         <itemref idref="chapter40" />
         <itemref idref="chapter41" />
         <itemref idref="chapter42" />
+        <itemref idref="chapter43" />
     </spine>
     <guide>
         <reference type="toc" title="Table of Contents" href="TOC.xhtml" />

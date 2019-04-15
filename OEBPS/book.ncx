@@ -295,5 +295,11 @@
 			</navLabel>
 			<content src="Chapter42.xhtml" />
 		</navPoint>
+		<navPoint id="chapter43" playOrder="48">
+			<navLabel>
+				<text>43. A Stunning Victory</text>
+			</navLabel>
+			<content src="Chapter43.xhtml" />
+		</navPoint>
 	</navMap>
 </ncx>
