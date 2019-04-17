@@ -40,7 +40,12 @@ to_mobi () {
 to_pdf () {
   if (which ebook-convert 2>/dev/null); then
     echo "Converting to PDF using Calibre ebook-convert..."
-    (cd $OUTPUT_DIR && ebook-convert "$ARTIFACT" .pdf --paper-size a4 --pdf-page-numbers --pdf-serif-family "Adobe Garamond Pro" --pdf-standard-font serif)
+    # try to use a Garamond font, otherwise just a Serif font
+    SERIF_FONT=$(fc-list : family |grep "Garamond" |cut -d , -f 1 |head -1)
+    if [ -z "$SERIF_FONT" ]; then
+      SERIF_FONT=Serif
+    fi
+    (cd $OUTPUT_DIR && ebook-convert "$ARTIFACT" .pdf --paper-size a4 --pdf-page-numbers --pdf-serif-family "$SERIF_FONT" --pdf-standard-font serif)
   elif (which mutool 2>/dev/null); then
     echo "Converting to PDF using Mutool..."
     (cd $OUTPUT_DIR && mutool convert -o "$ARTIFACT_NAME.pdf" "$ARTIFACT")
