@@ -38,15 +38,14 @@ to_mobi () {
 }
 
 to_pdf () {
-  # Mutool seems to be faster and give prettier output
-  if (which mutool 2>/dev/null); then
+  if (which ebook-convert 2>/dev/null); then
+    echo "Converting to PDF using Calibre ebook-convert..."
+    (cd $OUTPUT_DIR && ebook-convert "$ARTIFACT" .pdf --page-size a4 --pdf-page-numbers --pdf-serif-family "Adobe Garamond Pro" --pdf-standard-font serif)
+  elif (which mutool 2>/dev/null); then
     echo "Converting to PDF using Mutool..."
     (cd $OUTPUT_DIR && mutool convert -o "$ARTIFACT_NAME.pdf" "$ARTIFACT")
-  elif (which ebook-convert 2>/dev/null); then
-    echo "Converting to PDF using Calibre ebook-convert..."
-    (cd $OUTPUT_DIR && ebook-convert "$ARTIFACT" .pdf)
   else
-    echo "No PDF converter found. Consider installing MuPDF Tools or Calibre."
+    echo "No PDF converter found. Consider installing Calibre or MuPDF Tools."
     return 1
   fi
 }
