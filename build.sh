@@ -40,7 +40,7 @@ to_mobi () {
 to_pdf () {
   if (which ebook-convert 2>/dev/null); then
     echo "Converting to PDF using Calibre ebook-convert..."
-    (cd $OUTPUT_DIR && ebook-convert "$ARTIFACT" .pdf --page-size a4 --pdf-page-numbers --pdf-serif-family "Adobe Garamond Pro" --pdf-standard-font serif)
+    (cd $OUTPUT_DIR && ebook-convert "$ARTIFACT" .pdf --paper-size a4 --pdf-page-numbers --pdf-serif-family "Adobe Garamond Pro" --pdf-standard-font serif)
   elif (which mutool 2>/dev/null); then
     echo "Converting to PDF using Mutool..."
     (cd $OUTPUT_DIR && mutool convert -o "$ARTIFACT_NAME.pdf" "$ARTIFACT")
