@@ -301,5 +301,17 @@
 			</navLabel>
 			<content src="Chapter43.xhtml" />
 		</navPoint>
+		<navPoint id="appendix" playOrder="100">
+			<navLabel>
+				<text>Appendix</text>
+			</navLabel>
+			<content src="Appendix.xhtml" />
+		</navPoint>
+		<navPoint id="gForGinevra" playOrder="101">
+			<navLabel>
+				<text>G for Ginevra</text>
+			</navLabel>
+			<content src="GForGinevra.xhtml" />
+		</navPoint>
 	</navMap>
 </ncx>
