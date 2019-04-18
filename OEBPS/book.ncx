@@ -307,11 +307,17 @@
 			</navLabel>
 			<content src="Appendix.xhtml" />
 		</navPoint>
-		<navPoint id="gForGinevra" playOrder="101">
+		<navPoint id="appendix1" playOrder="101">
 			<navLabel>
 				<text>G for Ginevra</text>
 			</navLabel>
-			<content src="GForGinevra.xhtml" />
+			<content src="Appendix1.xhtml" />
+		</navPoint>
+		<navPoint id="appendix2" playOrder="102">
+			<navLabel>
+				<text>A Night at the Burrow: A Fan Short</text>
+			</navLabel>
+			<content src="Appendix2.xhtml" />
 		</navPoint>
 	</navMap>
 </ncx>
