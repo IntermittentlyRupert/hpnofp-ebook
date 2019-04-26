@@ -10,7 +10,7 @@
         <dc:relation>http://fanfiction.net/</dc:relation>
         <dc:creator>Matthew Schocke</dc:creator>
         <dc:source>https://www.fanfiction.net/s/2636963/</dc:source>
-        <meta property="dcterms:modified">2015-09-11T00:00:00Z</meta>
+        <meta property="dcterms:modified">2019-04-26T00:00:00Z</meta>
     </metadata>
     <manifest>
         <item id="ncx" href="book.ncx" media-type="application/x-dtbncx+xml" />
