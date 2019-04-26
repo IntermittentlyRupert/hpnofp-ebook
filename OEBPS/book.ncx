@@ -301,19 +301,13 @@
 			</navLabel>
 			<content src="Chapter43.xhtml" />
 		</navPoint>
-		<navPoint id="appendix" playOrder="100">
-			<navLabel>
-				<text>Appendix</text>
-			</navLabel>
-			<content src="Appendix.xhtml" />
-		</navPoint>
-		<navPoint id="appendix1" playOrder="101">
+		<navPoint id="appendix1" playOrder="1001">
 			<navLabel>
 				<text>G for Ginevra</text>
 			</navLabel>
 			<content src="Appendix1.xhtml" />
 		</navPoint>
-		<navPoint id="appendix2" playOrder="102">
+		<navPoint id="appendix2" playOrder="1002">
 			<navLabel>
 				<text>A Night at the Burrow: A Fan Short</text>
 			</navLabel>

@@ -2,7 +2,9 @@ body {
     margin-top: 10%;
 }
 
-h1, h2 {
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
@@ -29,7 +31,8 @@ nav {
     margin-top: 20%;
 }
 
-.tocimg, .yearimg {
+.tocimg,
+.yearimg {
     width: 45%;
     max-width: 593px;
 }
@@ -56,13 +59,22 @@ nav {
     line-height: 0.4em;
 }
 
-.nightmare, .letter, .song, .article {
+.author-note {
+    font-style: italic;
+}
+
+.nightmare,
+.letter,
+.song,
+.article {
     font-style: italic;
     margin-left: 15%;
     margin-right: 15%;
 }
 
-.letter p, .song p, .article p {
+.letter p,
+.song p,
+.article p {
     text-indent: 0;
 }
 
