@@ -15,10 +15,10 @@ clean () {
 minify_resources () {
   echo "Minifying resources..."
   mkdir -p "$MINIFIED_DIR"
-  cp -r "$INPUT_DIR/mimetype" "$INPUT_DIR/META-INF" "$INPUT_DIR/OEBPS" "$MINIFIED_DIR/"
-  for file in `ls $INPUT_DIR/OEBPS/*ml $INPUT_DIR/OEBPS/*.ncx $INPUT_DIR/OEBPS/*.opf`; do
+  cp -r "$INPUT_DIR/." "$MINIFIED_DIR/"
+  for file in `find ./src | grep -E '\.(xhtml|css|ncx|opf|xml)$'`; do
     # collapse whitespace for efficiency
-    sed 's|\s\s\s*| |g' "$file" | tr -d '\n' > `echo $file | sed "s|$INPUT_DIR/OEBPS/|$MINIFIED_DIR/OEBPS/|"`
+    sed 's|\s\s\s*| |g' "$file" | tr -d '\n' > `echo $file | sed "s|$INPUT_DIR/|$MINIFIED_DIR/|"`
   done
 }
 
