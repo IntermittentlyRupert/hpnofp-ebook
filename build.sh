@@ -38,7 +38,7 @@ make_epub () {
 to_mobi () {
   if (which ebook-convert >/dev/null 2>&1); then
     echo "Converting to MOBI using Calibre ebook-convert..."
-    ebook-convert "$EPUB_ARTIFACT" "$OUTPUT_DIR/$ARTIFACT_NAME.mobi" > /dev/null
+    ebook-convert "$EPUB_ARTIFACT" "$OUTPUT_DIR/$ARTIFACT_NAME.mobi" --output-profile kindle_pw3 > /dev/null
   else
     echo "No MOBI converter found. Consider installing Calibre."
     return 1
