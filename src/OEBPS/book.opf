@@ -14,7 +14,7 @@
     </metadata>
     <manifest>
         <item id="ncx" href="book.ncx" media-type="application/x-dtbncx+xml" />
-        <item id="coverimage" href="cover.jpg" media-type="image/jpeg" properties="cover-image" />
+        <item id="cover" href="cover.jpg" media-type="image/jpeg" properties="cover-image" />
         <item id="majordivider" href="majordivider.gif" media-type="image/gif" />
         <item id="minordivider" href="minordivider.gif" media-type="image/gif" />
         <item id="style" href="style.css" media-type="text/css" />

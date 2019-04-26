@@ -1,36 +1,42 @@
 #!/bin/sh
 
-ARTIFACT_NAME="Harry Potter and the Nightmares of Futures Past"
-ARTIFACT="$ARTIFACT_NAME.epub"
 DIR=`dirname $0`
+INPUT_DIR="$DIR/src"
 OUTPUT_DIR="$DIR/target"
+MINIFIED_DIR="$OUTPUT_DIR/minified"
+ARTIFACT_NAME="Harry Potter and the Nightmares of Futures Past"
+EPUB_ARTIFACT="$OUTPUT_DIR/$ARTIFACT_NAME.epub"
 
 clean () {
-  rm -r $OUTPUT_DIR/*
+  rm -r "$OUTPUT_DIR"
+  mkdir "$OUTPUT_DIR"
 }
 
 minify_resources () {
-  cp -r $DIR/mimetype $DIR/META-INF $DIR/OEBPS $OUTPUT_DIR/
-  for file in `ls $DIR/OEBPS/*ml $DIR/OEBPS/*.ncx $DIR/OEBPS/*.opf`; do
+  mkdir -p "$MINIFIED_DIR"
+  cp -r "$INPUT_DIR/mimetype" "$INPUT_DIR/META-INF" "$INPUT_DIR/OEBPS" "$MINIFIED_DIR/"
+  for file in `ls $INPUT_DIR/OEBPS/*ml $INPUT_DIR/OEBPS/*.ncx $INPUT_DIR/OEBPS/*.opf`; do
     # collapse whitespace for efficiency
-    sed 's|\s\s\s*| |g' "$file" | tr -d '\n' > `echo $file | sed "s|$DIR/OEBPS/|$OUTPUT_DIR/OEBPS/|"`
+    sed 's|\s\s\s*| |g' "$file" | tr -d '\n' > `echo $file | sed "s|$INPUT_DIR/OEBPS/|$MINIFIED_DIR/OEBPS/|"`
   done
 }
 
 make_epub () {
   SRC_DIR="$1"
   if [ $# -lt 2 ]; then
-    DEST_FILE="$ARTIFACT"
+    DEST_FILE="$EPUB_ARTIFACT"
   else
     DEST_FILE="$2"
   fi
-  (cd "$SRC_DIR" && zip -X0 "$DEST_FILE" mimetype && zip -r "$DEST_FILE" META-INF OEBPS)
+  # we need to force a non-relative path here
+  CANONICAL_DEST_FILE="$(cd "$(dirname "$DEST_FILE")"; pwd)/$(basename "$DEST_FILE")"
+  (cd $SRC_DIR && zip -X0 "$CANONICAL_DEST_FILE" mimetype && zip -r "$CANONICAL_DEST_FILE" META-INF OEBPS)
 }
 
 to_mobi () {
   if (which ebook-convert 2>/dev/null); then
     echo "Converting to MOBI using Calibre ebook-convert..."
-    (cd $OUTPUT_DIR && ebook-convert "$ARTIFACT" .mobi)
+    ebook-convert "$EPUB_ARTIFACT" "$OUTPUT_DIR/$ARTIFACT_NAME.mobi"
   else
     echo "No MOBI converter found. Consider installing Calibre."
     return 1
@@ -45,10 +51,10 @@ to_pdf () {
     if [ -z "$SERIF_FONT" ]; then
       SERIF_FONT=Serif
     fi
-    (cd $OUTPUT_DIR && ebook-convert "$ARTIFACT" .pdf --paper-size a4 --pdf-page-numbers --pdf-serif-family "$SERIF_FONT" --pdf-standard-font serif)
+    ebook-convert "$EPUB_ARTIFACT" "$OUTPUT_DIR/$ARTIFACT_NAME.pdf" --paper-size a4 --pdf-page-numbers --pdf-serif-family "$SERIF_FONT" --pdf-standard-font serif
   elif (which mutool 2>/dev/null); then
     echo "Converting to PDF using Mutool..."
-    (cd $OUTPUT_DIR && mutool convert -o "$ARTIFACT_NAME.pdf" "$ARTIFACT")
+    mutool convert -o "$OUTPUT_DIR/$ARTIFACT_NAME.pdf" "$EPUB_ARTIFACT"
   else
     echo "No PDF converter found. Consider installing Calibre or MuPDF Tools."
     return 1
@@ -61,28 +67,28 @@ make_target () {
     all)
       clean
       minify_resources
-      make_epub $OUTPUT_DIR
+      make_epub "$MINIFIED_DIR"
       to_mobi
       to_pdf
       ;;
     mobi)
-      if [ ! -e "$OUTPUT_DIR/$ARTIFACT" ]; then
-        make_epub $DIR "$OUTPUT_DIR/$ARTIFACT"
+      if [ ! -e "$EPUB_ARTIFACT" ]; then
+        make_epub "$INPUT_DIR" "$EPUB_ARTIFACT"
       fi
       to_mobi
       ;;
     pdf)
-      if [ ! -e "$OUTPUT_DIR/$ARTIFACT" ]; then
-        make_epub $DIR "$OUTPUT_DIR/$ARTIFACT"
+      if [ ! -e "$EPUB_ARTIFACT" ]; then
+        make_epub "$INPUT_DIR" "$EPUB_ARTIFACT"
       fi
       to_pdf
       ;;
     epub)
       minify_resources
-      make_epub $OUTPUT_DIR
+      make_epub "$MINIFIED_DIR"
       ;;
     uncompressed_epub)
-      make_epub $DIR "$OUTPUT_DIR/$ARTIFACT"
+      make_epub "$INPUT_DIR" "$EPUB_ARTIFACT"
       ;;
     clean)
       clean
@@ -92,7 +98,7 @@ make_target () {
   esac
 }
 
-mkdir -p $OUTPUT_DIR
+mkdir -p "$OUTPUT_DIR"
 if [ $# -eq 0 ]; then
   make_target all
 else
