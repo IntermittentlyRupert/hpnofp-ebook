@@ -24,6 +24,31 @@ nav {
     text-align: left;
 }
 
+ol {
+    list-style: none;
+    counter-reset: toc-counter;
+}
+ol li {
+    counter-increment: toc-counter;
+}
+ol li::before {
+    content: counter(toc-counter) ". ";
+}
+ol li.toc-heading {
+    counter-increment: none;
+    list-style: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+ol li.toc-heading::before {
+    content: "";
+}
+ol li.reset-counter {
+    counter-reset: toc-counter;
+}
+
 .coverpage {
     text-align: center;
     height: 100%;
