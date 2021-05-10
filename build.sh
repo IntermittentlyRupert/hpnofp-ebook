@@ -16,7 +16,7 @@ minify_resources () {
   echo "Minifying resources..."
   mkdir -p "$MINIFIED_DIR"
   cp -r "$INPUT_DIR/." "$MINIFIED_DIR/"
-  for file in `find ./src | grep -E '\.(xhtml|css|ncx|opf|xml)$'`; do
+  for file in `find $INPUT_DIR | grep -E '\.(xhtml|css|ncx|opf|xml)$'`; do
     # collapse whitespace for efficiency
     sed 's|\s\s\s*| |g' "$file" | tr -d '\n' > `echo $file | sed "s|$INPUT_DIR/|$MINIFIED_DIR/|"`
   done
