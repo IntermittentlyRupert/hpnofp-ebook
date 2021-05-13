@@ -35,6 +35,18 @@ make_epub () {
   (cd $SRC_DIR && zip -q -X0 "$CANONICAL_DEST_FILE" mimetype && zip -q -r "$CANONICAL_DEST_FILE" META-INF OEBPS)
 }
 
+make_epub_if_needed () {
+  if [ ! -e "$EPUB_ARTIFACT" ]; then
+    make_epub "$INPUT_DIR" "$EPUB_ARTIFACT"
+  fi
+}
+
+check_epub () {
+  if (which epubcheck 2>/dev/null); then
+    epubcheck "$OUTPUT_DIR/$ARTIFACT" || return 1
+  fi
+}
+
 to_mobi () {
   if (which ebook-convert >/dev/null 2>&1); then
     echo "Converting to MOBI using Calibre ebook-convert..."
@@ -74,15 +86,11 @@ make_target () {
       to_pdf
       ;;
     mobi)
-      if [ ! -e "$EPUB_ARTIFACT" ]; then
-        make_epub "$INPUT_DIR" "$EPUB_ARTIFACT"
-      fi
+      make_epub_if_needed
       to_mobi
       ;;
     pdf)
-      if [ ! -e "$EPUB_ARTIFACT" ]; then
-        make_epub "$INPUT_DIR" "$EPUB_ARTIFACT"
-      fi
+      make_epub_if_needed
       to_pdf
       ;;
     epub)
@@ -91,6 +99,10 @@ make_target () {
       ;;
     uncompressed_epub)
       make_epub "$INPUT_DIR" "$EPUB_ARTIFACT"
+      ;;
+    check)
+      make_epub_if_needed
+      check_epub || exit 1
       ;;
     clean)
       clean
