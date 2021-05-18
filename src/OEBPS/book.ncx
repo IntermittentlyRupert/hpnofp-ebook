@@ -310,7 +310,7 @@
         </navPoint>
         <navPoint id="appendix2" playOrder="50">
             <navLabel>
-                <text>A Night at the Burrow: A Fan Short</text>
+                <text>A Night at The Burrow: A Fan Short</text>
             </navLabel>
             <content src="Appendix2.xhtml" />
         </navPoint>
