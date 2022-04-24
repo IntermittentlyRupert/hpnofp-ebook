@@ -1,0 +1,67 @@
+on:
+  push:
+    branches:
+      - master
+
+env:
+  EPUBCHECK_VERSION: "4.2.6"
+
+name: Build and Publish Ebook
+jobs:
+  build:
+    name: "Build and Publish Ebook"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install Dependencies
+        run: .github/scripts/install_dependencies.sh
+
+      - name: Build EPUB
+        run: .github/scripts/build_epub.sh
+
+      - name: Check EPUB
+        run: java -jar "./target/epubcheck-${{ env.EPUBCHECK_VERSION }}/epubcheck.jar" "./target/hpnofp.epub"
+
+      - name: Build MOBI
+        run: ebook-convert "target/hpnofp.epub" "target/hpnofp.mobi" --output-profile kindle_pw3
+
+      - name: Build PDF
+        run: ebook-convert "target/hpnofp.epub" "target/hpnofp.pdf" --paper-size a4 --pdf-page-numbers --pdf-serif-family "EB Garamond" --pdf-standard-font serif
+
+      - name: "Get Current Version"
+        id: currentversion
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+      - name: "Get Next Version"
+        id: nextversion
+        uses: "WyriHaximus/github-action-next-semvers@v1"
+        with:
+          version: ${{ steps.currentversion.outputs.tag }}
+      - name: "Get Release Body"
+        id: releasebody
+        run: git log ${{ steps.currentversion.outputs.tag }}..HEAD --reverse --no-merges --pretty="- %s (@%an)" > target/release_body.txt
+
+      - name: Test Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: ebook-files
+          path: |
+            target/hpnofp.epub
+            target/hpnofp.mobi
+            target/hpnofp.pdf
+            target/release_body.txt
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          target_commitish: ${{ github.ref }}
+          tag_name: ${{ steps.nextversion.outputs.patch }}
+          body_path: target/release_body.txt
+          files: |
+            target/hpnofp.epub
+            target/hpnofp.mobi
+            target/hpnofp.pdf
+          fail_on_unmatched_files: true
