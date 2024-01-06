@@ -5,7 +5,7 @@ mkdir -p target
 
 echo "Installing JRE..."
 sudo apt-get update
-sudo apt-get install -y default-jre libegl1 libopengl0
+sudo apt-get install -y default-jre libegl1 libopengl0 libxcb-cursor0
 
 echo "Installing Calibre..."
 wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
