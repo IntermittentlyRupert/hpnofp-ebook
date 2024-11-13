@@ -67,6 +67,7 @@
         <item id="chapter42" href="Chapter42.xhtml" media-type="application/xhtml+xml" />
         <item id="chapter43" href="Chapter43.xhtml" media-type="application/xhtml+xml" />
         <item id="appendix" href="Appendix.xhtml" media-type="application/xhtml+xml" />
+        <item id="authorNotes" href="AuthorNotes.xhtml" media-type="application/xhtml+xml" />
         <item id="appendix1" href="Appendix1.xhtml" media-type="application/xhtml+xml" />
         <item id="appendix2" href="Appendix2.xhtml" media-type="application/xhtml+xml" />
     </manifest>
@@ -120,6 +121,7 @@
         <itemref idref="chapter42" />
         <itemref idref="chapter43" />
         <itemref idref="appendix" />
+        <itemref idref="authorNotes" />
         <itemref idref="appendix1" />
         <itemref idref="appendix2" />
     </spine>
