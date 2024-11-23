@@ -1,7 +1,4 @@
-on:
-  push:
-    branches:
-      - master
+on: workflow_dispatch
 
 env:
   EPUBCHECK_VERSION: "4.2.6"
