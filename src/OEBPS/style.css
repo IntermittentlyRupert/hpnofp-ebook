@@ -1,117 +1,120 @@
 body {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 h1,
 h2,
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
-    margin: 0;
-    padding: 0;
-    text-indent: 1em;
+  margin: 0;
+  padding: 0;
+  text-indent: 1em;
 }
 
 nav {
-    text-align: left;
+  text-align: left;
 }
 
 ol {
-    list-style: none;
-    counter-reset: toc-counter;
+  list-style: none;
+  counter-reset: toc-counter;
 }
 ol li {
-    counter-increment: toc-counter;
+  counter-increment: toc-counter;
 }
 ol li::before {
-    content: counter(toc-counter) ". ";
+  content: counter(toc-counter) ". ";
 }
 ol li.toc-heading {
-    counter-increment: none;
-    list-style: none;
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+  counter-increment: none;
+  list-style: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 ol li.toc-heading::before {
-    content: "";
+  content: "";
 }
 ol li.reset-counter {
-    counter-reset: toc-counter;
+  counter-reset: toc-counter;
 }
 
 .coverpage {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    margin-top: 20%;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 20%;
 }
 
 .tocimg,
 .yearimg {
-    width: 45%;
-    max-width: 593px;
+  width: 45%;
+  max-width: 593px;
 }
 
 .yeartitle {
-    margin-top: 40%;
+  margin-top: 40%;
 }
 
 .storytext {
-    margin-top: 7%;
+  margin-top: 7%;
 }
 
 .storyparagraph {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .storyparagraph > p:first-child {
-    text-indent: 0;
+  text-indent: 0;
 }
 
 .raisedcaps {
-    font-size: 4em;
-    font-weight: bold;
-    line-height: 0.4em;
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 0.4em;
 }
 
 .author-note {
-    font-style: italic;
+  font-style: italic;
+}
+.backlink {
+  margin-top: 0.5em;
 }
 
 .nightmare,
 .letter,
 .song,
 .article {
-    font-style: italic;
-    margin-left: 15%;
-    margin-right: 15%;
+  font-style: italic;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .letter p,
 .song p,
 .article p {
-    text-indent: 0;
+  text-indent: 0;
 }
 
 .letter p {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .article p.title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .article p.byline {
-    font-size: smaller;
-    margin-bottom: 0.5em;
+  font-size: smaller;
+  margin-bottom: 0.5em;
 }
