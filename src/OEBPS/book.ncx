@@ -301,14 +301,20 @@
             </navLabel>
             <content src="Chapter43.xhtml" />
         </navPoint>
-        <!-- add new chapters here and increment playOrder of appendecies -->
-        <navPoint id="appendix1" playOrder="49">
+        <!-- add new chapters here and increment playOrder of appendices -->
+        <navPoint id="authorNotes" playOrder="49">
+            <navLabel>
+                <text>Author notes</text>
+            </navLabel>
+            <content src="AuthorNotes.xhtml" />
+        </navPoint>
+        <navPoint id="appendix1" playOrder="50">
             <navLabel>
                 <text>G for Ginevra</text>
             </navLabel>
             <content src="Appendix1.xhtml" />
         </navPoint>
-        <navPoint id="appendix2" playOrder="50">
+        <navPoint id="appendix2" playOrder="51">
             <navLabel>
                 <text>A Night at The Burrow: A Fan Short</text>
             </navLabel>
