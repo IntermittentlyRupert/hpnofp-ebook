@@ -1,7 +1,7 @@
 on: workflow_dispatch
 
 env:
-  EPUBCHECK_VERSION: "4.2.6"
+  EPUBCHECK_VERSION: "5.1.0"
 
 name: Build and Publish Ebook
 jobs:
@@ -14,20 +14,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Dependencies
-        run: .github/scripts/install_dependencies.sh
-
-      - name: Build EPUB
-        run: .github/scripts/build_epub.sh
-
-      - name: Check EPUB
-        run: java -jar "./target/epubcheck-${{ env.EPUBCHECK_VERSION }}/epubcheck.jar" "./target/hpnofp.epub"
-
-      - name: Build MOBI
-        run: ebook-convert "target/hpnofp.epub" "target/hpnofp.mobi" --output-profile kindle_pw3
-
-      - name: Build PDF
-        run: ebook-convert "target/hpnofp.epub" "target/hpnofp.pdf" --paper-size a4 --pdf-page-numbers --pdf-serif-family "EB Garamond" --pdf-standard-font serif
+      - name: Build
+        run: .github/scripts/build_full.sh
 
       - name: "Get Current Version"
         id: currentversion
